@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> <!-- Binary encoding of characters -->
+    <title>Static server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- This will come in handy later -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Homemade+Apple|Indie+Flower|Long+Cang&display=swap" rel="stylesheet">
+
+    <!-- import the webpage's css -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header>
+        <h1 id="title">Daily Postcard Creator</h1>
+    </header>
+
+
+
+    <div id="postcard-wrapper">
+        <div id="postcard-body">
+           <main class="main">
+           <div class="topwrap">
+                <div id="imgWrap" class="imageWrapper">
+                    <img id="serverImage"/>
+                </div>
+
+           <label for="file-upload" id="random" class="custom-file-upload">
+               <i class="custom-text">Choose Image</i>
+           </label>
+
+           <input enctype="multipart/form-data" name="myImage" type="file" id="file-upload"/>
+
+               <label for="file-upload" id="wrap">
+                    <p id="replace">Replace Image</p>
+               </label>
+               <hr id="horizontal">
+
+               <div class="divider" id="divider"></div>
+
+               <textarea id="text-box" class="textbox" type="text" name="inputBox"  contenteditable="true" placeholder="write your message here!"></textarea>
+           </div>
+
+           </main>
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="pseudo-footer">
+
+
+        <div class="font-select">
+            <div id="font-title">Choose your font</div>
+            <ul class="font-body">
+                <li class="indie font" onclick="whichFont(1)">Indie Flower</li>
+                <li class="dancing font" onclick="whichFont(2)">Dancing Script</li>
+                <li class="cang font" onclick="whichFont(3)">Long Cang</li>
+                <li class="apple font" onclick="whichFont(4)">Homemade Apple</li>
+            </ul>
+        </div>
+
+
+        <div class="buttons">
+            <div id="color-title">Choose your color</div>
+
+            <button class="colorBox" id="color1" onclick="whichColor(1)"></button>
+            <button class="colorBox" id="color2" onclick="whichColor(2)"></button>
+            <button class="colorBox"id="color3" onclick="whichColor(3)"></button>
+            <button class="colorBox" id="color4" onclick="whichColor(4)"></button>
+            <button class="colorBox"id="color5" onclick="whichColor(5)"></button>
+            <button class="colorBox"id="color6" onclick="whichColor(6)"></button>
+            <button class="colorBox" id="color7" onclick="whichColor(7)"></button>
+            <button class="colorBox" id="color8" onclick="whichColor(8)"></button>
+            <button class="colorBox" id="color9" onclick="whichColor(9)"></button>
+        </div>
+
+        <div id="share">Share postcard</div>
+    </div>
+
+
+    <footer>
+
+</footer>
+
+
+
+
+    <!-- Import script -->
+
+    <script src="script.js"></script>
+</body>
+</html>
